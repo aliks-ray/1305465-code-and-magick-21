@@ -1,7 +1,7 @@
 # Учебный проект «Код и Магия» [![Build status][travis-image]][travis-url]
 
 * Студент: [Alexandra Kovalchuk](https://up.htmlacademy.ru/javascript/21/user/1305465).
-* Наставник: `Неизвестно`.
+* Наставник: [Денис Байдаров](https://up.htmlacademy.ru/javascript/21/user/7956).
 
 ---
 
