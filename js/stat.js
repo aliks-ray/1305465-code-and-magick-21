@@ -1,16 +1,16 @@
 'use strict';
 
-const  CANVAS_HEIGHT = 270;
-const  CANVAS_WIDTH = 420;
-const  CANVAS_X = 100;
-const  CANVAS_Y = 10;
-const  CANVAS_Y_BOTTOM = CANVAS_Y + CANVAS_HEIGHT;
-const  CANVAS_GAP = 10;
-const  CONTENT_GAP = 20;
-const  CANVAS_FONT = 16;
-const  BAR_HEIGHT = 150;
-const  BAR_WIDTH = 40;
-const  BAR_GAP = 50;
+const CANVAS_HEIGHT = 270;
+const CANVAS_WIDTH = 420;
+const CANVAS_X = 100;
+const CANVAS_Y = 10;
+const CANVAS_Y_BOTTOM = CANVAS_Y + CANVAS_HEIGHT;
+const CANVAS_GAP = 10;
+const CONTENT_GAP = 20;
+const CANVAS_FONT = 16;
+const BAR_HEIGHT = 150;
+const BAR_WIDTH = 40;
+const BAR_GAP = 50;
 
 
 let renderCloud = function (ctx, x, y, color) {
