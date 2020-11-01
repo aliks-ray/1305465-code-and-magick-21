@@ -4,7 +4,6 @@
   const setupWindow = document.querySelector(`.setup`);
   const setupButtonOpen = document.querySelector(`.setup-open`);
   const setupButtonClose = document.querySelector(`.setup-close`);
-  const similarWizardsList = setupWindow.querySelector(`.setup-similar`);
   const setupForm = setupWindow.querySelector(`.setup-wizard-form`);
 
   const wizardElements = {
@@ -31,7 +30,6 @@
 
   const openPopup = () => {
     setupWindow.classList.remove(`hidden`);
-    similarWizardsList.classList.remove(`hidden`);
 
     document.addEventListener(`keydown`, onPopupEscPress);
 
@@ -67,7 +65,7 @@
   });
 
   setupForm.addEventListener(`submit`, (evt) => {
-
+    window.backend.save(new FormData(setupForm), closePopup, window.setup.onError);
     evt.preventDefault();
   });
 
@@ -78,5 +76,8 @@
       obj.elem.style = `${property}: ${color}`;
       input.value = `${color}`;
     });
+  };
+  window.modal = {
+    setupWindow
   };
 })();
