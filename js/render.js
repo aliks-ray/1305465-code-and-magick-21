@@ -16,6 +16,7 @@
   };
 
   const createSimilarWizards = (data) => {
+    removeWizards();
     const takeNumber = data.length > WIZARDS_COUNT
       ? WIZARDS_COUNT
       : data.length;
@@ -25,6 +26,14 @@
     }
 
     window.modal.setupWindow.querySelector(`.setup-similar`).classList.remove(`hidden`);
+  };
+
+  const removeWizards = () => {
+    const wizards = similarListElement.querySelectorAll(`.setup-similar-item`);
+
+    wizards.forEach((element) => {
+      element.remove();
+    });
   };
 
   window.render = {
